@@ -1,0 +1,43 @@
+{
+    "name": "ImgBB Bot",
+    "description": "Telegram Bot That Hosts Your Image On imgbb.com And Returns Link By @AmineSoukara",
+    "logo": "https://i.imgur.com/zYIllxt.jpg",
+    "keywords": [
+        "Telegram",
+        "Bots",
+        "Image",
+        "ImgBB"
+    ],
+    "repository": "https://github.com/AmineSoukara/ImgBB-Bot",
+    "website": "https://telegram.dog/AmineSoukara",
+    "success_url": "https://t.me/DamienSoukara",
+    "env": {
+        "API_ID": {
+            "description": "Get this value from my.telegram.org",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Get this value from my.telegram.org",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "Get this from @BotFather XD",
+            "required": true
+        },
+        "API": {
+            "description": "You Can Get An API Key From https://api.imgbb.com.",
+            "required": true
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
