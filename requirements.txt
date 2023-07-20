@@ -3,4 +3,4 @@ tgcrypto==1.2.2
 pyromod==1.5
 
 imgbbpy==0.1.3
-aiohttp==3.7.4
+aiohttp==3.8.5
